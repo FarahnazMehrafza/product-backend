@@ -5,7 +5,7 @@ import app from "./app";
 
 // ADD CONNECTION TO MONGODB
 if (
-  process.env.DATABASE == undefined ||
+  process.env.DATABASE === undefined ||
   process.env.DATABASE_PASSWORD === undefined
 ) {
   throw new Error("DATABASE environment variable(s) not set");
